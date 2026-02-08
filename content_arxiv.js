@@ -1,11 +1,11 @@
-(function() {
+(function () {
     // 1. 提取 PDF 链接（arxiv 的结构比较稳定，通常可以直接推导）
     const pdfUrl = window.location.href.replace('abs', 'pdf') + ".pdf";
     const paperTitle = document.querySelector('h1.title.mathjax')?.innerText.replace('Title:', '').trim() || "这篇文章";
 
     // 2. 创建按钮
     const btn = document.createElement('button');
-    btn.innerHTML = `🚀 ChatGPT 解读`;
+    btn.innerHTML = `🚀 AI 解读论文`;
     // ... 样式保持不变 (见前一条回复) ...
     Object.assign(btn.style, {
         position: 'fixed', top: '20px', right: '20px', zIndex: '10000',
@@ -18,25 +18,15 @@
     btn.onmouseout = () => btn.style.transform = 'scale(1)';
 
     btn.onclick = () => {
-        const defaultTemplate = `你好！请帮我深度解读这篇名为《\${title}》的论文。
-请重点分析：
-1. 论文解决了什么问题？
-2. 核心创新点和方法论是什么？
-3. 实验结果说明了什么？
-论文 PDF 地址：\${url}`;
-        
-        // 1. 获取用户自定义的模板
-        chrome.storage.local.get(['customTemplate'], (res) => {
+        chrome.storage.local.get(['customTemplate', 'targetAI'], (res) => {
+            const target = res.targetAI || 'chatgpt';
             let template = res.customTemplate || defaultTemplate;
-            
-            // 2. 替换变量
-            let finalPrompt = template
-                .replace('${title}', paperTitle)
-                .replace('${url}', pdfUrl);
+            let finalPrompt = template.replace('${title}', paperTitle).replace('${url}', pdfUrl);
 
-            // 3. 发送给 ChatGPT
+            // 将任务存入 storage
             chrome.storage.local.set({ 'pendingArxivTask': finalPrompt }, () => {
-                window.open('https://chatgpt.com/', '_blank');
+                const url = target === 'gemini' ? 'https://gemini.google.com/app' : 'https://chatgpt.com/';
+                window.open(url, '_blank');
             });
         });
     };
