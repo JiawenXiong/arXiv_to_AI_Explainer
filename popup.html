@@ -50,18 +50,18 @@
 
 <body>
   <div style="margin-bottom: 15px;">
-    <label style="font-size: 13px;">选择 AI 平台:</label>
+    <label style="font-size: 13px;" id="labelPlatform"></label>
     <select id="targetAI" style="width: 100%; padding: 5px; margin-top: 5px;">
       <option value="chatgpt">ChatGPT</option>
       <option value="gemini">Google Gemini</option>
     </select>
   </div>
-  <h3>自定义 Prompt</h3>
-  <p>可用变量: ${title}, ${url}</p>
+  <h3 id="labelPrompt"></h3>
+  <p id="labelVariables"></p>
   <textarea id="promptInput"></textarea>
   <div class="btn-group">
-    <button id="save">保存设置</button>
-    <button id="reset">恢复默认</button>
+    <button id="save"></button>
+    <button id="reset"></button>
   </div>
   <script src="popup.js"></script>
 </body>

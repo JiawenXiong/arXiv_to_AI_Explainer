@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "arXiv 论文一键解读",
+  "default_locale": "zh_CN",
+  "name": "__MSG_extensionName__",
   "version": "0.1",
   "author": {
     "email": "xiong.jia.wen@163.com"
@@ -8,7 +9,7 @@
   "icons": {
     "128": "icons/icon.png"
   },
-  "description": "在 arXiv 页面添加按钮，一键发送 PDF 链接至 ChatGPT/Gemini 进行解读",
+  "description": "__MSG_extensionDescription__",
   "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html"
