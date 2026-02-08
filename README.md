@@ -1,4 +1,3 @@
-Here is the English translation of your README file, optimized for a professional GitHub repository.
 # arXiv to AI Explainer 🚀
 
 [English](README.md) | [简体中文](README.zh-CN.md)
