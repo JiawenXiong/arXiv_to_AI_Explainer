@@ -26,6 +26,14 @@
     {
       "matches": ["https://gemini.google.com/*"],
       "js": ["content_gemini.js"]
+    },
+    {
+      "matches": ["https://kimi.moonshot.cn/*", "https://www.kimi.com/*"],
+      "js": ["content_kimi.js"]
+    },
+    {
+      "matches": ["https://www.doubao.com/*"],
+      "js": ["content_doubao.js"]
     }
   ]
 }

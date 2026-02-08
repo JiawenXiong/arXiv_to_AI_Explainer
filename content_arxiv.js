@@ -26,7 +26,22 @@
 
             // 将任务存入 storage
             chrome.storage.local.set({ 'pendingArxivTask': finalPrompt }, () => {
-                const url = target === 'gemini' ? 'https://gemini.google.com/app' : 'https://chatgpt.com/';
+                let url;
+                switch(target) {
+                    case 'gemini':
+                        url = 'https://gemini.google.com/app';
+                        break;
+                    case 'kimi':
+                        url = 'https://www.kimi.com/';
+                        break;
+                    case 'doubao':
+                        url = 'https://www.doubao.com/chat/?from_login=1';
+                        break;
+                    case 'chatgpt':
+                    default:
+                        url = 'https://chatgpt.com/';
+                        break;
+                }
                 window.open(url, '_blank');
             });
         });

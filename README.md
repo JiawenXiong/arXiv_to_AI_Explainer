@@ -10,7 +10,7 @@ Here is the English translation of your README file, optimized for a professiona
 ## 🌟 Key Features
 
 * **Instant Access**: Automatically injects a "🚀 AI Explainer" button directly onto arXiv paper detail pages.
-* **Multi-Model Support**: Seamlessly jump to **ChatGPT** or **Google Gemini** (switchable in settings).
+* **Multi-Model Support**: Seamlessly jump to **ChatGPT**, **Google Gemini**, **Kimi**, or **Doubao** (豆包) (switchable in settings).
 * **Automatic Data Extraction**: Automatically extracts the paper **Title** and **PDF Link**—no more manual copying.
 * **Fully Customizable Prompts**:
 * Supports user-defined prompt templates.
@@ -30,6 +30,8 @@ arxiv-chatgpt-helper/
 ├── content_arxiv.js    # Injection script: Scrapes info & adds the button
 ├── content_chatgpt.js  # ChatGPT automation: Fills content & submits
 ├── content_gemini.js   # Gemini automation: Fills content & submits
+├── content_kimi.js     # Kimi automation: Fills content & submits
+├── content_doubao.js   # Doubao automation: Fills content & submits
 ├── popup.html          # Settings popup interface
 ├── popup.js            # Settings logic & persistent storage
 └── icons
@@ -67,7 +69,7 @@ Click "**Load unpacked**" and select the folder containing this project.
 4. **Customization**:
 * Click the extension icon in the browser toolbar.
 * Modify the default Prompt in the popup.
-* Switch the **Target AI** to Gemini.
+* Switch the **Target AI** to Gemini, Kimi, or Doubao (豆包).
 * Click **Save Settings** to apply changes.
 
 

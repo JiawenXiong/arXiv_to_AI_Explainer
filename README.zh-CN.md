@@ -9,7 +9,7 @@
 ## 🌟 功能亮点
 
 * **一键触达**：在 arXiv 论文详情页自动注入“🚀 AI 论文解读”按钮。
-* **多模型支持**：支持跳转至 **ChatGPT** 或 **Google Gemini**，可在设置中随时切换。
+* **多模型支持**：支持跳转至 **ChatGPT**、**Google Gemini**、**Kimi** 或 **豆包**，可在设置中随时切换。
 * **参数自动抓取**：自动提取论文**标题**及 **PDF 链接**，无需手动复制。
 * **完全自定义 Prompt**：
 * 支持用户自定义提示词模板。
@@ -29,6 +29,8 @@ arxiv-chatgpt-helper/
 ├── content_arxiv.js    # 页面注入脚本：抓取信息与添加按钮
 ├── content_chatgpt.js  # ChatGPT 自动化脚本：填入内容并提交
 ├── content_gemini.js   # Gemini 自动化脚本：填入内容并提交
+├── content_kimi.js     # Kimi 自动化脚本：填入内容并提交
+├── content_doubao.js   # 豆包自动化脚本：填入内容并提交
 ├── popup.html          # 设置弹窗界面
 ├── popup.js            # 设置逻辑与持久化存储
 └── icons
@@ -64,7 +66,7 @@ git clone https://github.com/JiawenXiong/arXiv_to_AI_Explainer.git
 4. **自定义设置**：
 * 点击浏览器工具栏的插件图标。
 * 在弹窗中修改默认 Prompt。
-* 切换 **Target AI** 为 Gemini。
+* 切换 **Target AI** 为 Gemini、Kimi 或 豆包。
 * 点击 **保存设置** 即可生效。
 
 
