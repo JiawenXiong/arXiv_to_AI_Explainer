@@ -105,7 +105,7 @@ git clone https://github.com/JiawenXiong/arXiv_to_AI_Explainer.git
 
 ## 📄 开源协议
 
-本项目采用 [MIT License](https://www.google.com/search?q=LICENSE) 开源协议。
+本项目采用 [Apache-2.0 license](https://www.google.com/search?q=LICENSE) 开源协议。
 
 ---
 

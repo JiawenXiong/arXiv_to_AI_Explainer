@@ -107,7 +107,7 @@ Issues and Pull Requests are welcome to improve this project!
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
+This project is licensed under the [Apache-2.0 license](https://www.google.com/search?q=LICENSE).
 
 ---
 
