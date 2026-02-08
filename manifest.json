@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "arXiv 论文一键解读",
+  "version": "1.0",
+  "description": "在 arXiv 页面添加按钮，一键发送 PDF 链接至 ChatGPT 进行解读",
+  "permissions": ["storage"],
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://arxiv.org/abs/*"],
+      "js": ["content_arxiv.js"]
+    },
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content_chatgpt.js"]
+    }
+  ]
+}
