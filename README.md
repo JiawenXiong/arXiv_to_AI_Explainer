@@ -3,7 +3,7 @@ Here is the English translation of your README file, optimized for a professiona
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-**One-click AI Insights for arXiv Papers** —— A lightweight browser extension designed to help researchers instantly analyze arXiv papers using ChatGPT or Google Gemini.
+**One-click AI Insights for arXiv Papers** —— A lightweight browser extension designed to help researchers instantly analyze arXiv papers using ChatGPT, Google Gemini, Kimi or Doubao.
 
 ---
 

@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-**arXiv 论文一键 AI 解读助手** —— 这是一个轻量级的浏览器插件，旨在帮助科研人员通过 ChatGPT 或 Google Gemini 一键深入解读 arXiv 论文。
+**arXiv 论文一键 AI 解读助手** —— 这是一个轻量级的浏览器插件，旨在帮助科研人员通过 ChatGPT、Google Gemini、Kimi 或 豆包一键深入解读 arXiv 论文。
 
 ---
 
