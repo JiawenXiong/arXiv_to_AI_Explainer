@@ -11,6 +11,7 @@
 * **Instant Access**: Automatically injects a "🚀 AI Explainer" button directly onto arXiv paper detail pages.
 * **Multi-Model Support**: Seamlessly jump to **ChatGPT**, **Google Gemini**, **Kimi**, or **Doubao** (豆包) (switchable in settings).
 * **Automatic Data Extraction**: Automatically extracts the paper **Title** and **PDF Link**—no more manual copying.
+* **Copy Prompt Fallback**: One-click copy of the instantiated prompt (variables already replaced), so you can paste it manually if auto-fill ever fails on the AI platform. Available both as an on-page button and in the extension popup.
 * **Fully Customizable Prompts**:
 * Supports user-defined prompt templates.
 * Provides variable placeholders: `${title}` (Paper Title) and `${url}` (PDF Link).
@@ -65,6 +66,7 @@ Click "**Load unpacked**" and select the folder containing this project.
 1. Visit any [arXiv](https://arxiv.org/) abstract page.
 2. Click the green **"🚀 AI Explainer"** button located at the top right of the page.
 3. The extension will open your chosen AI platform (default: ChatGPT) and automatically paste your prompt and the paper link.
+4. **Auto-fill not working?** Click the blue **"📋 Copy Prompt"** button on the arXiv page to copy the instantiated prompt, then paste it into the AI platform manually. You can also click the extension icon and copy from the popup (it copies the current paper's prompt when viewing an arXiv page, otherwise the last generated prompt).
 4. **Customization**:
 * Click the extension icon in the browser toolbar.
 * Modify the default Prompt in the popup.

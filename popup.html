@@ -31,6 +31,22 @@
       border-radius: 4px;
     }
 
+    #copyPrompt {
+      width: 100%;
+      margin-bottom: 6px;
+      background: #2563eb;
+      color: white;
+    }
+
+    #copyPrompt:disabled {
+      background: #b9c2d8;
+      cursor: not-allowed;
+    }
+
+    #copyHint {
+      margin: 0 0 10px;
+    }
+
     #save {
       background: #10a37f;
       color: white;
@@ -61,6 +77,8 @@
   <h3 id="labelPrompt"></h3>
   <p id="labelVariables"></p>
   <textarea id="promptInput"></textarea>
+  <button id="copyPrompt" disabled></button>
+  <p id="copyHint"></p>
   <div class="btn-group">
     <button id="save"></button>
     <button id="reset"></button>
